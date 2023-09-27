@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capbabilites"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:background="#c0c0c0"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="Remembers what user said earlier in theconversation"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView23"
+            android:background="#c0c0c0"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="theconversation"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:background="#c0c0c0"
+            android:id="@+id/textView2"
+            android:layout_height="30sp"
+            android:layout_width="wrap_content"
+            android:text="Allows user to provide follow-up corrections"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:background="#c0c0c0"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+
+            android:text="Trained to decline inapproriate requests"
+            android:layout_below="@id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limitations"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/textView11"
+            android:background="#c0c0c0"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+
+            android:text="May occcasionally generate incorrect information"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:background="#c0c0c0"
+            android:textSize="14sp"
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="May occcasionally generate incorrect  biased content"
+            android:layout_below="@id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:background="#c0c0c0"
+            android:textSize="14sp"
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="Limited knowledge of world and events after 2021"
+            android:layout_below="@id/textView22"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SendContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+
+            android:id="@+id/messageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/border3"
+            android:hint="Send a message..."
+            android:paddingLeft="15dp"
+            android:maxHeight="135dp"
+            android:minHeight="45dp"
+            android:drawableRight="@drawable/send"
+            android:drawablePadding="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
